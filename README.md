@@ -6,6 +6,8 @@ I usually copy the PlexConnectDaemonHelper.bash file into /usr/bin/ so it is acc
 You will also need to use the 'sudo chmod +x PlexConnectDaemonHelper.bash' command to provide execute permissions to the file.
 
 Usage:
+The helper script assumes that PlexConnect is located within a folder named PlexConnect-master which is within the Applications folder. 
+
 Issue the command "PlexConnectDaemonHelper.bash" from the Terminal. You will be prompted to enter a local administrator users' password, this will typically be the password for the account you are currently using.
 
 If the PlexConnect Daemon is running then it will display the process number of the running instance. It will also show a brief status of PlexConnect.
