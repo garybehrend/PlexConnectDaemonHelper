@@ -36,3 +36,18 @@ If you issue the command "PlexConnectDaemonHelper.bash stop" then the PlexConnec
 If you issue the command "PlexConnectDaemonHelper.bash start" then the PlexConnect Daemon will be started if it is not running.
 
 Tested on OS X 10.9.1
+
+------
+Version History
+v1.0.3 - 26th Jan 2014
+Added a new "restart" argument. Essentially just issues stop, then start, in a single command
+
+v1.0.2
+First version that was publisher to the Repository.
+Updated code to support the stop, start, and status arguments.
+
+v1.0.1
+Not published to Repository. Slight tweaks to code.
+
+v1.0.0
+Not published to Repository. Inital version of the app

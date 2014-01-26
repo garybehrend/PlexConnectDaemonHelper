@@ -1,5 +1,5 @@
 #!/bin/bash
-my_script_version="1.0.2"
+my_script_version="1.0.3"
 my_script_name=`basename $0 | cut -d'.' -f1`
 
 path_to_PlexConnect_Log_File="/Applications/PlexConnect-master/PlexConnect.log"
@@ -184,6 +184,14 @@ then
 elif [ "$1" == "stop" ]
 then
 	stop_plexconnect_daemon
+
+elif [ "$1" == "restart" ]
+then
+	stop_plexconnect_daemon
+	echo "Waiting 10 seconds..."
+	echo ""
+	sleep 10
+	start_plexconnect_daemon
 
 elif [ "$1" == "status" ]
 then
